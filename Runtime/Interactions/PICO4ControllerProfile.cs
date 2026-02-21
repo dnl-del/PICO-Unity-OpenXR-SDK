@@ -335,6 +335,16 @@ namespace UnityEngine.XR.OpenXR.Features.Interactions
             InputSystem.InputSystem.RemoveLayout(nameof(PICO4TouchController));
         }
 
+        protected override string GetDeviceLayoutName()
+        {
+            return nameof(PICO4TouchController);
+        }
+        
+        protected override InteractionProfileType GetInteractionProfileType()
+        {
+            return base.GetInteractionProfileType();
+        }
+
         /// <inheritdoc/>
         protected override void RegisterActionMapsWithRuntime()
         {
