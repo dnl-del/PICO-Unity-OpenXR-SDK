@@ -62,7 +62,7 @@ namespace Unity.XR.OpenXR.Features.PICOSupport
 
             var AdditionalRules = new ValidationRule[]
             {
-                new ValidationRule(this)
+                /*new ValidationRule(this)
                 {
                     message = "Only the PICO Touch Interaction Profile is supported right now.",
                     checkPredicate = () =>
@@ -101,7 +101,7 @@ namespace Unity.XR.OpenXR.Features.PICOSupport
                         }
                     },
                     error = true,
-                }
+                }*/
             };
 
             rules.AddRange(AdditionalRules);
